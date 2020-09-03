@@ -1,13 +1,11 @@
-# volto-addon-template
-[![Releases](https://img.shields.io/github/v/release/eea/volto-addon-template)](https://github.com/eea/volto-addon-template/releases)
+# volto-widget-toggle
+[![Releases](https://img.shields.io/github/v/release/eea/volto-widget-toggle)](https://github.com/eea/volto-widget-toggle/releases)
 
-[Volto](https://github.com/plone/volto) add-on
+[Volto](https://github.com/plone/volto) add-on: Replace any checkbox with a nice toggle button within edit forms
 
 ## Features
 
-###
-
-Demo GIF
+![Toogle Checkboxes](https://raw.githubusercontent.com/eea/volto-widget-toggle/docs/docs/volto-widget-toggle.gif)
 
 ## Getting started
 
@@ -21,11 +19,11 @@ Demo GIF
 1. Update `package.json`:
     ``` JSON
     "addons": [
-        "@eeacms/volto-addon-template"
+        "@eeacms/volto-widget-toggle"
     ],
 
     "dependencies": {
-        "@eeacms/volto-addon-template": "github:eea/volto-addon-template#0.1.0"
+        "@eeacms/volto-widget-toggle": "github:eea/volto-widget-toggle#0.1.0"
     }
     ```
 
