@@ -1,11 +1,23 @@
 {
   "name": "@eeacms/volto-widget-toggle",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "volto-widget-toggle: Volto add-on to replace checkboxes with toggle buttons",
   "main": "src/index.js",
-  "repository": "https://github.com/eea/volto-widget-toggle",
   "author": "European Environment Agency: IDM2 A-Team",
   "license": "MIT",
+  "homepage": "https://github.com/eea/volto-widget-toggle",
+  "keywords": [
+    "volto-addon",
+    "volto-widget",
+    "volto-toggle",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eea/volto-widget-toggle.git"
+  },
   "devDependencies": {
     "release-it": "*"
   },

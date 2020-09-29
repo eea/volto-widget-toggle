@@ -23,7 +23,7 @@
     ],
 
     "dependencies": {
-        "@eeacms/volto-widget-toggle": "github:eea/volto-widget-toggle#0.1.0"
+        "@eeacms/volto-widget-toggle": "1.0.0"
     }
     ```
 
@@ -39,14 +39,14 @@
 
 ## How to contribute
 
-See [DEVELOP.md](DEVELOP.md).
+See [DEVELOP.md](https://github.com/eea/volto-widget-toggle/blob/master/DEVELOP.md).
 
 ## Copyright and license
 
 The Initial Owner of the Original Code is European Environment Agency (EEA).
 All Rights Reserved.
 
-See [LICENSE.md](LICENSE.md) for details.
+See [LICENSE.md](https://github.com/eea/volto-widget-toggle/blob/master/LICENSE.md) for details.
 
 ## Funding
 
