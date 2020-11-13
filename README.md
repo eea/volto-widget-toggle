@@ -1,6 +1,7 @@
 # volto-widget-toggle
-
 [![Releases](https://img.shields.io/github/v/release/eea/volto-widget-toggle)](https://github.com/eea/volto-widget-toggle/releases)
+[![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-widget-toggle%2Fmaster&subject=master)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-widget-toggle/job/master/display/redirect)
+[![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-widget-toggle%2Fdevelop&subject=develop)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-widget-toggle/job/develop/display/redirect)
 
 [Volto](https://github.com/plone/volto) add-on: Replace any checkbox with a nice toggle button within edit forms
 
@@ -13,12 +14,14 @@
 1. Create new volto project if you don't already have one:
 
    ```
-   $ npm install -g @plone/create-volto-app
-   $ create-volto-app my-volto-project
+   $ npm install -g yo @plone/generator-volto
+   $ yo @plone/volto my-volto-project --addon @eeacms/volto-widget-toggle
+
    $ cd my-volto-project
+   $ yarn add -W @eeacms/volto-widget-toggle
    ```
 
-1. Update `package.json`:
+1. If you already have a volto project, just update `package.json`:
 
    ```JSON
    "addons": [
@@ -26,7 +29,7 @@
    ],
 
    "dependencies": {
-       "@eeacms/volto-widget-toggle": "1.0.0"
+       "@eeacms/volto-widget-toggle": "^1.0.0"
    }
    ```
 
