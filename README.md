@@ -29,7 +29,7 @@
    ],
 
    "dependencies": {
-       "@eeacms/volto-widget-toggle": "^1.0.0"
+       "@eeacms/volto-widget-toggle": "^2.0.0"
    }
    ```
 
