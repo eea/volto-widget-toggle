@@ -16,19 +16,30 @@ import { FormFieldWrapper } from '@plone/volto/components';
  * @returns {string} Markup of the component.
  */
 const CheckboxWidget = (props) => {
-  const { id, title, value, onChange, isDisabled } = props;
-  const [checked, setChecked] = React.useState(value || false);
+  const {
+    id,
+    title,
+    value,
+    onChange,
+    isDisabled,
+    defaultValue = false,
+  } = props;
+
+  React.useEffect(() => {
+    if (value === null && defaultValue) onChange(id, defaultValue); //value===null prevents assigning default value on every render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <FormFieldWrapper {...props} columns={1}>
       <div className="wrapper">
         <Checkbox
           toggle
           name={`field-${id}`}
-          checked={checked}
+          checked={value ?? defaultValue}
           disabled={isDisabled}
           onChange={(event, { checked }) => {
             onChange(id, checked);
-            setChecked(checked);
           }}
           label={<label htmlFor={`field-${id}`}>{title}</label>}
         />
