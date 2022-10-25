@@ -57,7 +57,7 @@
 
 ## Release
 
-See [RELEASE.md](https://github.com/eea/volto-addon-template/blob/master/RELEASE.md).
+See [RELEASE.md](https://github.com/eea/volto-widget-toggle/blob/master/RELEASE.md).
 
 ## How to contribute
 
