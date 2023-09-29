@@ -22,17 +22,26 @@
 
 ## Getting started
 
-1. Create new volto project if you don't already have one:
+### Try volto-widget-toggle with Docker
 
+      git clone https://github.com/eea/volto-widget-toggle.git
+      cd volto-widget-toggle
+      make
+      make start
+
+Go to http://localhost:3000
+
+### Add volto-widget-toggle to your Volto project
+
+1. Make sure you have a [Plone backend](https://plone.org/download) up-and-running at http://localhost:8080/Plone
+
+   ```Bash
+   docker compose up backend
    ```
-   $ npm install -g yo @plone/generator-volto
-   $ yo @plone/volto my-volto-project --addon @eeacms/volto-widget-toggle
 
-   $ cd my-volto-project
-   $ yarn add -W @eeacms/volto-widget-toggle
-   ```
+1. Start Volto frontend
 
-1. If you already have a volto project, just update `package.json`:
+* If you already have a volto project, just update `package.json`:
 
    ```JSON
    "addons": [
@@ -40,15 +49,23 @@
    ],
 
    "dependencies": {
-       "@eeacms/volto-widget-toggle": "^2.0.0"
+       "@eeacms/volto-widget-toggle": "*"
    }
+   ```
+
+* If not, create one:
+
+   ```
+   npm install -g yo @plone/generator-volto
+   yo @plone/volto my-volto-project --canary --addon @eeacms/volto-widget-toggle
+   cd my-volto-project
    ```
 
 1. Install new add-ons and restart Volto:
 
    ```
-   $ yarn
-   $ yarn start
+   yarn
+   yarn start
    ```
 
 1. Go to http://localhost:3000
