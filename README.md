@@ -14,12 +14,11 @@
 [![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widget-toggle-develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widget-toggle-develop)
 [![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widget-toggle-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widget-toggle-develop)
 
-
-[Volto](https://github.com/plone/volto) add-on
+[Volto](https://github.com/plone/volto) add-on: Replace any checkbox with a nice toggle button within edit forms
 
 ## Features
 
-Demo GIF
+![Toogle Checkboxes](https://raw.githubusercontent.com/eea/volto-widget-toggle/docs/docs/volto-widget-toggle.gif)
 
 ## Getting started
 
