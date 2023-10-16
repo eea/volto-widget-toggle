@@ -1,4 +1,7 @@
+import { CheckboxWidget } from './components';
+
 const applyConfig = (config) => {
+  config.widgets.type.boolean = CheckboxWidget;
   return config;
 };
 
