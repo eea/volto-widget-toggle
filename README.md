@@ -18,7 +18,7 @@
 
 ## Features
 
-![Toogle Checkboxes](https://raw.githubusercontent.com/eea/volto-widget-toggle/docs/docs/volto-widget-toggle.gif)
+![Toogle Checkboxes](https://raw.githubusercontent.com/eea/volto-widget-toggle/master/docs/volto-widget-toggle.gif)
 
 ## Getting started
 
