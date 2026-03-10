@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-intl-redux';
 import CheckboxWidget from './CheckboxWidget';
 import configureStore from 'redux-mock-store';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 
 const mockStore = configureStore([]);
 const store = mockStore({
