@@ -5,14 +5,15 @@ describe('Blocks Tests', () => {
   afterEach(slateAfterEach);
 
   it('Add Block: Empty', () => {
-    // Change page title
-    cy.get('[contenteditable=true]').first().clear();
+    const titleSelector = '.block.inner.title [contenteditable="true"]';
 
-    cy.get('[contenteditable=true]').first().type('My Add-on Page');
+    // Change page title
+    cy.get(titleSelector).clear();
+    cy.get(titleSelector).type('My Add-on Page');
 
     cy.get('.documentFirstHeading').contains('My Add-on Page');
 
-    cy.get('[contenteditable=true]').first().type('{enter}');
+    cy.get(titleSelector).type('{enter}');
 
     // Add block
     cy.get('.ui.basic.icon.button.block-add-button').first().click();
