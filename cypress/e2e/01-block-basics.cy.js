@@ -17,8 +17,10 @@ describe('Blocks Tests', () => {
 
     // Add block
     cy.get('.ui.basic.icon.button.block-add-button').first().click();
-    cy.get('.blocks-chooser .title').contains('Media').click();
-    cy.get('.content.active.media .button.image').contains('Image').click();
+    cy.get(".blocks-chooser .ui.form .field.searchbox input[type='text']").type(
+      'Image',
+    );
+    cy.get('.button.image').contains('Image').click({ force: true });
 
     // Save
     cy.get('#toolbar-save').click();
