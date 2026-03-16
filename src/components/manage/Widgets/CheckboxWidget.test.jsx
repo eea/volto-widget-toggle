@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { Provider } from 'react-intl-redux';
 import CheckboxWidget from './CheckboxWidget';
 import configureStore from 'redux-mock-store';
@@ -21,8 +21,8 @@ describe('CheckboxWidget', () => {
     jest.clearAllMocks();
   });
 
-  it('renders a checkbox', () => {
-    const { getByText } = render(
+  it('renders a checkbox', async () => {
+    const { findByText } = render(
       <Provider store={store} locale="en">
         <CheckboxWidget
           id="test"
@@ -31,10 +31,10 @@ describe('CheckboxWidget', () => {
         />
       </Provider>,
     );
-    expect(getByText('Test Checkbox')).toBeInTheDocument();
+    expect(await findByText('Test Checkbox')).toBeInTheDocument();
   });
 
-  it('sets a default value if given', () => {
+  it('sets a default value if given', async () => {
     render(
       <Provider store={store} locale="en">
         <CheckboxWidget
@@ -45,7 +45,9 @@ describe('CheckboxWidget', () => {
         />
       </Provider>,
     );
-    expect(mockOnChange).toHaveBeenCalledWith('test', true);
+    await waitFor(() => {
+      expect(mockOnChange).toHaveBeenCalledWith('test', true);
+    });
   });
 
   it('does not set a default value if already having a value', () => {
