@@ -10,6 +10,20 @@
 
 ![Toogle Checkboxes](https://raw.githubusercontent.com/eea/volto-widget-toggle/master/docs/volto-widget-toggle.gif)
 
+## Upgrade
+
+### Upgrading to 6.x
+
+> This version requires `Volto 18` or `Volto 19` and Node.js 22.
+
+The widget keeps the same id and the same behaviour, so upgrading from 5.x on Volto 18 needs no content changes. The release adds Volto 19 support and moves the repository to the Volto 19 layout, where the published package lives in `packages/volto-widget-toggle`.
+
+#### Breaking changes
+
+- **Node.js 22 or newer is required** (`engines.node >= 22`), 5.x declared no engine.
+- **React 18 is required.** The package declares `react` and `react-dom` as `^18.2.0` peers, 5.x declared no peers.
+- **The package no longer ships the Jest setup.** `jest-addon.config.js` and `jest.setup.js` were removed in favour of Vitest, so a Volto 18 project that still runs the Jest harness has to keep its own copy.
+
 ## Requirements
 
 ### Backend
