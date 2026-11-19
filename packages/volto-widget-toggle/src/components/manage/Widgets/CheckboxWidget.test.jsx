@@ -1,3 +1,4 @@
+import { vi } from 'vitest';
 import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import { Provider } from 'react-intl-redux';
@@ -10,15 +11,15 @@ const store = mockStore({
   intl: {
     locale: 'en',
     messages: {},
-    formatMessage: jest.fn(),
+    formatMessage: vi.fn(),
   },
 });
 
-const mockOnChange = jest.fn();
+const mockOnChange = vi.fn();
 
 describe('CheckboxWidget', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   it('renders a checkbox', async () => {
